@@ -18,7 +18,7 @@ const CreateAnId = props => {
 
   return (
     <form>
-      <h3 className="text-center">Step { step } - Create an ID</h3>
+      <h3 className="text-center">Step { step }/4 - Create an ID</h3>
 
       <div className={classnames("form-group", { "has-error" : errors['accountType'] })}>
         <label className="control-label" htmlFor='accountType'>Account Type</label>

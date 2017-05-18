@@ -24,7 +24,7 @@ const CompanyInformation = props => {
 
   return (
     <form>
-      <h3 className="text-center">Step { step } - Company Information</h3>
+      <h3 className="text-center">Step { step }/4 - Company Information</h3>
 
       <FormGroup
         label={'Organization Name'}
