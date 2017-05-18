@@ -37,6 +37,7 @@ class SignUpForm extends Component {
     const validationObject = this.validateInput(this.state);
 
     if(validationObject.validStep) {
+      alert('Ajax for email validation happens here...');
       this.setState({
         step: this.state.step + 1,
         errors: {}
