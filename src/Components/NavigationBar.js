@@ -6,7 +6,7 @@ const NavigationBar = ({ toggleForm, activeForm }) => {
     <nav className="navbar navbar-default">
       <div className="container-fluid">
         <div className="navbar-header">
-          <a href="#" className="navbar-brand">N</a>
+          <a href="#" className="navbar-brand">Altocan</a>
         </div>
         <div className="navbar-collapse collapse">
           <ul className="nav navbar-nav navbar-right">

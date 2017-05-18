@@ -6,6 +6,7 @@ class LoginPage extends Component {
     return (
       <div className="row">
         <div className="col-md-4 col-md-offset-4">
+          <h1 className="text-center">Login</h1>
           <LoginForm />
         </div>
       </div>

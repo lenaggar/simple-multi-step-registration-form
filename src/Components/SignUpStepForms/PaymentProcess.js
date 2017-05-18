@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
-class LoginForm extends Component {
+class CreateAnId extends Component {
   state = {
     username : '',
-    password : ''
+    email : '',
+    password : '',
+    passwordConfirmation : ''
   }
 
   onChange(e) {
@@ -16,11 +18,12 @@ class LoginForm extends Component {
   }
 
   render() {
-    const { username, password } = this.state;
+    const { username, email, password, passwordConfirmation } = this.state;
 
     return (
       <form onSubmit={this.onSubmit.bind(this)}>
-      
+        <h1 className="text-center">Sign up</h1>
+
         <div className="form-group">
           <label className="control-label" htmlFor="username">Username</label>
           <input
@@ -28,6 +31,17 @@ class LoginForm extends Component {
             type="text"
             name="username"
             value={ username }
+            onChange={ this.onChange.bind(this) }
+          />
+        </div>
+
+        <div className="form-group">
+          <label className="control-label" htmlFor="email">Email</label>
+          <input
+            className="form-control"
+            type="email"
+            name="email"
+            value={ email }
             onChange={ this.onChange.bind(this) }
           />
         </div>
@@ -44,11 +58,22 @@ class LoginForm extends Component {
         </div>
 
         <div className="form-group">
-          <button className="btn btn-primary btn-lg">Login</button>
+          <label className="control-label" htmlFor="passwordConfirmation">Password Confirmation</label>
+          <input
+            className="form-control"
+            type="password"
+            name="passwordConfirmation"
+            value={ passwordConfirmation }
+            onChange={ this.onChange.bind(this) }
+          />
+        </div>
+
+        <div className="form-group">
+          <button className="btn btn-primary btn-lg">Sign Up</button>
         </div>
       </form>
     );
   }
 }
 
-export default LoginForm;
+export default CreateAnId;
